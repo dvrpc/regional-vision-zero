@@ -192,3 +192,8 @@ text-decoration: underline;
  color: #d3d3d3;
  text-decoration: underline;
 }
+#about_logo {
+  margin: 5px 15px 0px 0px;
+  float: left;
+  height: 90px;
+}
