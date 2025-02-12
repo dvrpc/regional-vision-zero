@@ -88,8 +88,8 @@
     height:70px;
     }
     .idrum-logo{
-    height: 110px;
-    margin-right: 5px;
+    height: 180px;
+    margin: 3px 0px 0px 5px;
     float:left;
     }
     #header-link-text{
@@ -107,6 +107,9 @@
     }
     .modal-footer {
     padding: 5px;
+    }
+    #more_info{
+      margin: 80px 0px 0px 12px;
     }
     #about_footer {
     font-style: italic;
@@ -170,8 +173,8 @@ div#row span img {
   margin-right: 10px;
 }
 iframe {
-  /* height: calc(100vh - 90px); */
-  height:calc(100vh -  270px);
+  height: calc(100vh - 100px);
+  /* height:calc(100vh -  270px); */
   width: 100%;
   border-style: none;
   margin: 86px 0px 0px 0px;
