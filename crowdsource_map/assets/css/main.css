@@ -15,7 +15,13 @@
     #map{
     padding-left: 0px !important;
     }
- 
+    iframe {
+      height: calc(100vh - 40px);
+      /* height:calc(100vh -  270px); */
+      width: 100%;
+      border-style: none;
+      margin: 35px 0px 0px 0px;
+    }
     .navbar-brand {
     padding: 8px 15px;
     line-height: 20px;
@@ -61,6 +67,16 @@
       width: 37px;
       background: transparent;
     }
+    .btn.btn-sm {
+      margin:25px 10px 0px 4px;
+      float:right;color:#fff;
+      background-color:#005475;
+    }
+    #about_logo {
+      margin: 5px 15px 0px 0px;
+      float: left;
+      height: 90px;
+    }
     .shadowfilter {
     -webkit-filter: drop-shadow(0px 0px 0px #fff);
     -webkit-transition: all 0.5s linear;
@@ -76,8 +92,9 @@
     text-decoration: none;
     } */
     #full-logo{
-    margin: 0px 0px 0px 0px;
-    height:60px;
+   padding: 12px 0px 19px 30px;
+    /* height:60px; */
+    width:304px;
     }
     #dvrpc-logo{
     margin: -15px 0px 0px 0px;
@@ -173,13 +190,7 @@ div#row span img {
   width: 50px;
   margin-right: 10px;
 }
-iframe {
-  height: calc(100vh - 100px);
-  /* height:calc(100vh -  270px); */
-  width: 100%;
-  border-style: none;
-  margin: 86px 0px 0px 0px;
-}
+
 #footer {
 height: 150px;
 background:#3a3a3a;
@@ -192,8 +203,17 @@ text-decoration: underline;
  color: #d3d3d3;
  text-decoration: underline;
 }
-#about_logo {
-  margin: 5px 15px 0px 0px;
-  float: left;
-  height: 90px;
+
+
+div.panel, p.flip {
+  line-height: 30px;
+  margin: auto;
+  font-size: 16px;
+  padding: 5px;
+  text-align: center;
+  background: #555;
+  border: solid 1px #666;
+  color: #ffffff;
+  border-radius: 3px;
+  user-select: none;
 }
