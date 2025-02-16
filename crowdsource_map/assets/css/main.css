@@ -7,20 +7,42 @@
     overscroll-behavior: unset !important;
     scroll-behavior: unset !important;
     }
-  /* #container {
-    height: 100%;
-    margin: 75px -4px 0px 0px;
-    }
-    */
     #map{
     padding-left: 0px !important;
     }
-    iframe {
-      height: calc(100vh - 40px);
-      /* height:calc(100vh -  270px); */
+    .original-style {
+       /* height: calc(100vh - 40px); */
+       height:calc(100vh - 190px);
+       width: 100%;
+       border-style: none;
+       margin: 35px 0px 0px 0px;
+       -webkit-transition:0.4s;
+       -moz-transition:0.4s;
+       -ms-transition:0.4s;
+       -o-transition:0.4s;
+       transition:0.4s;
+    }
+    .alternate-style {
+      height:calc(100vh - 90px);
       width: 100%;
       border-style: none;
       margin: 35px 0px 0px 0px;
+      -webkit-transition:0.4s;
+      -moz-transition:0.4s;
+      -ms-transition:0.4s;
+      -o-transition:0.4s;
+      transition:0.4s;
+   }
+    .footer-og {
+      height: 150px;
+      background:#3a3a3a;
+      }
+  .footer-alt {
+    height: 40px;
+    background:#3a3a3a;
+    }
+    .footer_panel{
+      color:#fff;
     }
     .navbar-brand {
     padding: 8px 15px;
@@ -91,29 +113,26 @@
     color: white;
     text-decoration: none;
     } */
-    #full-logo{
+    #full-logo {
    padding: 12px 0px 19px 30px;
     /* height:60px; */
     width:304px;
     }
-    #dvrpc-logo{
-    margin: -15px 0px 0px 0px;
-    height:30px;
+    #dvrpc_logo {
+      margin: 5px 15px 0px 0px;
+      float: right;
+      height: 90px;
     }
-    #idrum-logo{
-    margin: -15px 0px 0px 0px;
-    height:70px;
-    }
-    .idrum-logo{
-    height: 180px;
-    margin: 3px 0px 0px 5px;
+    .rvz-full-logo {
+    height: 140px;
+    margin: 0px 9px 0px 5px;
     float:left;
     }
-    #header-link-text{
+    #header-link-text {
     font-size: 20px;
     margin: 4px 0px 0px 10px;
     }
-    .container-fluid{
+    .container-fluid {
     z-index: 30;
     height: 84px;
     border-bottom: 3px solid #f7f7f7;
@@ -134,7 +153,7 @@
     background-color: #3a3a3a;
     border-radius: 4px;
     border: 1px solid transparent;
-    /* background-image: linear-gradient(to bottom,#d9edf7 0,#b9def0 100%); */
+    margin: 12px;
     }
      #about_footer p{
     margin: 10px;
@@ -172,11 +191,7 @@
     clear:both;
     visibility:hidden;
     }
-    .mapboxgl-ctrl-top-right {
-    top: 0;
-    right: 0;
-    margin-top:90px;
-}
+
 
 div#row {
   overflow: hidden; /*This is a clearfix because all it's children are floated*/
@@ -190,11 +205,6 @@ div#row span img {
   width: 50px;
   margin-right: 10px;
 }
-
-#footer {
-height: 150px;
-background:#3a3a3a;
-}
 .one {
 color:#1931A5;
 text-decoration: underline;
@@ -203,7 +213,6 @@ text-decoration: underline;
  color: #d3d3d3;
  text-decoration: underline;
 }
-
 
 div.panel, p.flip {
   line-height: 30px;
@@ -216,4 +225,10 @@ div.panel, p.flip {
   color: #ffffff;
   border-radius: 3px;
   user-select: none;
+}
+.footer-text-left{
+float:left;
+}
+.footer-text-right{
+  float:right;
 }

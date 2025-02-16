@@ -16,7 +16,9 @@
       <!-- Optional theme -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     
       <!-- Upgrading the jquery and jquery UI verison with the latest CDN versions-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> 
@@ -56,9 +58,26 @@
     </div>
 
     <div class="row" id="container">
-      <iframe src="https://dvrpcgis.maps.arcgis.com/apps/instant/reporter/index.html?appid=56f6c75b078d40d3a0a2da696d65a8f8" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>iFrames are not supported on this page.</iframe>
-      <!-- <div id="footer">
-      </div> -->
+      <iframe id="iframe_map" src="https://dvrpcgis.maps.arcgis.com/apps/instant/reporter/index.html?appid=56f6c75b078d40d3a0a2da696d65a8f8" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>iFrames are not supported on this page.</iframe>
+      
+      <div id="footer">
+        <p class="flip"><i id="hide"></i></p>
+       
+        <div class="footer_panel" style="display: block;">
+         <div class="footer-text-left">
+          <address>
+            Kevin Murphy | Senior Manager, Office of Safe Streets<br/>
+            <a href="mailto:cking@dvrpc.org" class="one">kmurphy@dvrpc.org</a><br/>
+            </address>
+         </div>
+         <div class="footer-text-right">
+          <img id="dvrpc_logo" src="assets/img/dvrpc_logo.png" alt="DVRPC logo"/>
+          <p>Product abstract - <a href="https://www.dvrpc.org/Products/WEB19032" target="_blank" class="one">https://www.dvrpc.org/Products/WEB19032</a></span></p>
+         </div>
+        
+           
+        </div>
+      </div>
 
     </div>      
   </div>
@@ -73,32 +92,36 @@
                             <!-- <h4 class="modal-title">Regional Vision Zero</h4> -->
                         </div>
                         <div class="modal-body">
-                            <div> <img src="assets/img/rvz_logo.png" alt="IDRUm logo" class="idrum-logo"/>
-                              <p>The DVRPC and its partners are developing a Regional Vision Zero (RVZ) plan to make roadways safer for all modes, and want to hear from you about traffic safety concerns you have. This mapping tool allows users to select a location and answer a few questions about your identified traffic safety concern. Comments gathered here will help inform the RVZ plan to improve roadway safety.
+                            <div> <img src="assets/img/rvz_logo.png" alt="IDRUm logo" class="rvz-full-logo"/>
+                              <p>DVRPC and its partners are developing a <B>Regional Vision Zero (RVZ)</B> plan to make roadways safer for all users. We want to hear your traffic safety concerns. Use this mapping tool to report a concern by selecting a location and answering a few questions. 
                               </p>
+                              </div>
                              </div>
                            
                              <div id="more_info">
                               <hr>
-                              <h4>For more information:</h4>
+                              <ol>
+                                <li> To begin, click the blue “Submit a Traffic Safety Concern” button (bottom left of map).</li>
+                                <li> Click on the map to add a point where your safety concern is located (e.g.: intersection, driveway, etc.).</li>
+                                <li>Answer the questions in the form.</li>
+                                <li>Click the blue <B>“Submit”</B>button to send us your traffic safety concern.</li>
+                              </ol>
+                              You can also vote for an existing comment by clicking the thumbs up emoji. Comments gathered here will help inform the RVZ plan to improve roadway safety. 
+                              <!-- <h4>For more information:</h4>
                               <img id="about_logo" src="assets/img/dvrpc_logo.png" alt="DVRPC logo"/>
                               <p style="margin: 5px 0px 0px 45px; display: block;">
-                              <address>
-                              Kevin Murphy | Senior Manager, Office of Safe Streets<br/>
-                              <a href="mailto:cking@dvrpc.org" class="one">kmurphy@dvrpc.org</a><br/>
-                              </address>
                              </p>
-                              <p>
+                             <p>
                                 <a href="https://www.dvrpc.org/committees/rstf/" target="_blank" class="one">Regional Safety Task Force</a> 
                                 <br>
                                 <a href="https://www.dvrpc.org/transportation/safety/visionzero/" target="_blank" class="one">Regional Vision Zero</a>
-                              </p>  
-                              </div>
+                              </p>  -->
+                            </div>
+
                             <div id="about_footer"><p>DVRPC serves strictly as an advisory agency. Any planning or design concepts as prepared by DVRPC are conceptual and may require engineering design and feasibility analysis. Actual authority for carrying out any planning proposals rest solely with the governing bodies of the states, local governments or authorities that have the primary responsibility to own, manage or maintain any transportation facility. 
                             </p>
 
                             <p>For more information, visit <a href="https://www.dvrpc.org/Policies/" target="_blank" class="footer_links">https://www.dvrpc.org/Policies/</a></p>
-                            <!-- <p>Product abstract - <a href="https://www.dvrpc.org/Products/WEB19032" target="_blank" class="one">https://www.dvrpc.org/Products/WEB19032</a></span></p> -->
                             </div>
                             </div>
                         </div>
@@ -108,8 +131,9 @@
 
   
 <script src="assets/js/app.js"></script>
-  <script>var _gaq = [['_setAccount', 'UA-9825778-1'], ['_trackPageview']];</script>
-  <script async src="//www.google-analytics.com/ga.js"></script>
+  
+<script>var _gaq = [['_setAccount', 'UA-9825778-1'], ['_trackPageview']];</script>
+<script async src="//www.google-analytics.com/ga.js"></script>
 
 <!-- End Main Body -->
   </body>
