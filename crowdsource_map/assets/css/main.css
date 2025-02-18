@@ -121,7 +121,7 @@
       margin: 5px 15px 0px 0px;
       float: left;
       /* height: 90px; */
-      width:180px;
+      width:160px;
     }
     .rvz-full-logo {
     height: 140px;
@@ -217,7 +217,7 @@
       font-size: 16px;
       padding: 5px;
       text-align: center;
-      background: #555;
+      background: #3a3a3a;
       /* border: solid 1px #666; */
       color: #ffffff;
       border-radius: 3px;
@@ -225,7 +225,7 @@
     }
     .footer-text-left{
     float:left;
-    margin: 5px 0px 0px 12px;
+    margin: 0px 0px 0px 12px;
     display: flex;
     flex-direction: row;
     }
@@ -237,15 +237,15 @@
     }
     .footer-text-right{
       float:right;
-      margin: 5px 12px 0px 0px;
+      margin: 0% 12px 0px 0px;
       display: flex;
       flex-direction: row;
       align-items: center;
     }
     .vertical-footer-right {
       border-left: 1px solid white;
-      height: 60px;
-      margin: 5px 5px 5px 10px;
+      height: 80px;
+      margin: 0px 15px 0px 0px;
     }
     .footer_links{
       color: #d3d3d3;
@@ -257,7 +257,7 @@
       }
     .footer-alt {
       height: 50px;
-      background:#555;
+      background:#3a3a3a;
       }
       .footer_panel{
         color:#d3d3d3;
