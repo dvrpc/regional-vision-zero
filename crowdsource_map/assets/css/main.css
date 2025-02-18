@@ -262,3 +262,8 @@
       .footer_panel{
         color:#d3d3d3;
       }
+      @media screen and (max-width: 930px) {
+        #header-link-text {
+          display: none;
+        }
+      }
