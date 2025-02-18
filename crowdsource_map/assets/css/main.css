@@ -144,7 +144,7 @@
     padding: 5px;
     }
     #more_info{
-      margin: 80px 0px 0px 12px;
+      margin: 10px 0px 0px 12px;
     }
     #more_info_p {
       margin: 0px 12px 0px 25px;
@@ -265,5 +265,10 @@
       @media screen and (max-width: 930px) {
         #header-link-text {
           display: none;
+        }
+      }
+      @media screen and (max-width: 374px) {
+        .modal-content {
+          width:350px;
         }
       }
