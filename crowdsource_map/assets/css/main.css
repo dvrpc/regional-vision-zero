@@ -33,17 +33,6 @@
       -o-transition:0.4s;
       transition:0.4s;
    }
-    .footer-og {
-      height: 150px;
-      background:#3a3a3a;
-      }
-  .footer-alt {
-    height: 40px;
-    background:#3a3a3a;
-    }
-    .footer_panel{
-      color:#fff;
-    }
     .navbar-brand {
     padding: 8px 15px;
     line-height: 20px;
@@ -104,33 +93,35 @@
     -webkit-transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
     transition: all 0.3s linear;
-
     }
     .shadowfilter:hover {
     -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 87, 3, .95)) ;
     }
-   /* #header-link{
-    color: white;
-    text-decoration: none;
-    } */
     #full-logo {
-   padding: 12px 0px 19px 30px;
+    padding: 12px 0px 19px 30px;
     /* height:60px; */
     width:304px;
     }
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    #header-link-text {
+      font-size: 22px;
+      margin: 15px 0px 19px 10px;
+      color: #005475;
+    }
     #dvrpc_logo {
       margin: 5px 15px 0px 0px;
-      float: right;
-      height: 90px;
+      float: left;
+      /* height: 90px; */
+      width:180px;
     }
     .rvz-full-logo {
     height: 140px;
     margin: 0px 9px 0px 5px;
     float:left;
-    }
-    #header-link-text {
-    font-size: 20px;
-    margin: 4px 0px 0px 10px;
     }
     .container-fluid {
     z-index: 30;
@@ -155,7 +146,7 @@
     border: 1px solid transparent;
     margin: 12px;
     }
-     #about_footer p{
+    #about_footer p{
     margin: 10px;
     }
     .modal-dialog{
@@ -191,44 +182,66 @@
     clear:both;
     visibility:hidden;
     }
-
-
-div#row {
-  overflow: hidden; /*This is a clearfix because all it's children are floated*/
-}
-div#row span {
-  display: block;
-}
-div#row span img {
-  display: block;
-  float: left;
-  width: 50px;
-  margin-right: 10px;
-}
-.one {
-color:#1931A5;
-text-decoration: underline;
-}
-.footer_links{
- color: #d3d3d3;
- text-decoration: underline;
-}
-
-div.panel, p.flip {
-  line-height: 30px;
-  margin: auto;
-  font-size: 16px;
-  padding: 5px;
-  text-align: center;
-  background: #555;
-  border: solid 1px #666;
-  color: #ffffff;
-  border-radius: 3px;
-  user-select: none;
-}
-.footer-text-left{
-float:left;
-}
-.footer-text-right{
-  float:right;
-}
+    div#row {
+      overflow: hidden; /*This is a clearfix because all it's children are floated*/
+    }
+    div#row span {
+      display: block;
+    }
+    div#row span img {
+      display: block;
+      float: left;
+      width: 50px;
+      margin-right: 10px;
+    }
+    div.panel, p.flip {
+      line-height: 30px;
+      margin: auto;
+      font-size: 16px;
+      padding: 5px;
+      text-align: center;
+      background: #555;
+      /* border: solid 1px #666; */
+      color: #ffffff;
+      border-radius: 3px;
+      user-select: none;
+    }
+    .footer-text-left{
+    float:left;
+    margin: 5px 0px 0px 12px;
+    display: flex;
+    flex-direction: row;
+    }
+    .footer-text-left1{
+      margin: 0px 15px 0px 0px;
+    }
+    .footer-text-left2{
+      margin: 0px 5px 0px 0px;
+    }
+    .footer-text-right{
+      float:right;
+      margin: 5px 12px 0px 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .vertical-footer-right {
+      border-left: 1px solid white;
+      height: 60px;
+      margin: 5px 5px 5px 10px;
+    }
+    .footer_links{
+      color: #d3d3d3;
+      text-decoration: underline;
+    }
+    .footer-og {
+      height: 150px;
+      background:#3a3a3a;
+      }
+    .footer-alt {
+      height: 50px;
+      background:#555;
+      }
+      .footer_panel{
+        color:#d3d3d3;
+      }
