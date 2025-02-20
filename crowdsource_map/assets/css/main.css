@@ -86,7 +86,7 @@
       background-color:#005475;
     }
     .btn.btn-sm-map {
-      margin: 0px 12px 0px 0px;
+      margin: 10px 1px 10px 0px;
       float:right;color:#fff;
       background-color:#005475;
     }
@@ -160,6 +160,8 @@
     .modal-dialog{
       max-width:800px;
       overflow:hidden;
+      display: flex;
+flex-direction: column;
       }
     /* .modal-content{
       height: 600px;
