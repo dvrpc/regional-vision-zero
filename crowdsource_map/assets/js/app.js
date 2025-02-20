@@ -1,4 +1,4 @@
-$('#aboutModal').modal('show');
+// $('#aboutModal').modal('show');
 $(document).ready(function(){
     $("#iframe_map").addClass("original-style"); // Initial style
     $("#footer").addClass("footer-og"); // Initial style

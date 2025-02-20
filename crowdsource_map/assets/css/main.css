@@ -6,6 +6,8 @@
     scroll-snap-stop: normal !important;
     overscroll-behavior: unset !important;
     scroll-behavior: unset !important;
+    font-family: "Roboto";
+    overflow: hidden; 
     }
     #map{
     padding-left: 0px !important;
@@ -23,7 +25,7 @@
        transition:0.4s;
     }
     .alternate-style {
-      height:calc(100vh - 90px);
+      height:calc(100vh - 75px);
       width: 100%;
       border-style: none;
       margin: 35px 0px 0px 0px;
@@ -102,40 +104,58 @@
     .shadowfilter:hover {
     -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 87, 3, .95)) ;
     }
-    #full-logo {
-    padding: 12px 0px 19px 30px;
-    /* height:60px; */
-    width:304px;
-    }
     .wrapper {
       display: flex;
       flex-direction: row;
       align-items: center;
     }
     #header-link-text {
-      font-size: 22px;
-      margin: 15px 0px 19px 10px;
+      font-size: 24px;
+      font-weight: 500;
+      margin: 20px 0px 19px 0px;
       color: #005475;
     }
-    #dvrpc_logo {
-      margin: 5px 15px 0px 0px;
-      float: left;
-      /* height: 90px; */
-      width:160px;
+    .dvrpc_logo {
+      display: inline-block;
+      width: 172px;
+      height: 80px;
+      background-size: cover;
+    }   
+    .d-logo {
+      background-image: url(../img/dvrpc_logo.svg);
+    }
+    .d-logo:hover,
+    .d-logo:focus {
+      background-image: url(../img/dvrpc_logo_white.svg);
     }
     .rvz-full-logo {
     height: 140px;
     margin: 0px 9px 0px 5px;
     float:left;
     }
+    #dvrpc-small-logo {
+      padding: 12px 0px 19px 30px;
+      /* height:60px; */
+      width:135px;
+    }
+    #rvz-small-logo {
+        padding: 0px 40px 0px 0px;
+        /* height:60px; */
+        width:145px;
+     }
+     .vertical-banner {
+      border-left: 1px solid;
+      color: #505050;
+      height: 40px;
+      margin: 0px 20px 0px 20px;
+    }
     .container-fluid {
     z-index: 30;
     height: 84px;
     border-bottom: 3px solid #f7f7f7;
-    font-weight: 700;
-    font-size: 22px;
     color: #fff;
     white-space: nowrap;
+    padding: 0px 30px 0px 30px;
     }
     .modal-content{
       height: 600px;
@@ -181,7 +201,7 @@
     text-decoration:none;
     }
     a:hover { 
-    color:#101010; 
+    color:#fff; 
     }
     .heading {
     background:#666666;
@@ -223,17 +243,34 @@
       border-radius: 3px;
       user-select: none;
     }
+    .fa-chevron-down fa fa-lg{
+      color:#969696;
+    }
+    #hide {
+      color:#969696;
+    }
+    #hide:hover {
+      color:#fff;
+    }
+    #footer-title{
+      margin: 0px 0px 0px 0px;
+      font-size:18px;
+      }
     .footer-text-left{
     float:left;
-    margin: 0px 0px 0px 12px;
+    margin: 0px 0px 0px 0px;
     display: flex;
     flex-direction: row;
     }
     .footer-text-left1{
-      margin: 0px 15px 0px 0px;
+      margin: 0px 40px 0px 0px;
+      font-size: 16px;
+      font-weight: 500;
     }
     .footer-text-left2{
-      margin: 0px 5px 0px 0px;
+      margin: 0px 0px 0px 0px;
+      font-size: 16px;
+      font-weight: 500;
     }
     .footer-text-right{
       float:right;
@@ -241,23 +278,27 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      font-size: 16px;
     }
     .vertical-footer-right {
       border-left: 1px solid white;
       height: 80px;
-      margin: 0px 15px 0px 0px;
+      margin: 0px 25px 0px 25px;
     }
     .footer_links{
       color: #d3d3d3;
       text-decoration: underline;
+      font-size: 16px;
     }
     .footer-og {
       height: 150px;
       background:#3a3a3a;
+      padding: 0px 30px 0px 30px;
       }
     .footer-alt {
-      height: 50px;
+      /* height: 35px; */
       background:#3a3a3a;
+      padding: 0px 30px 0px 30px;
       }
       .footer_panel{
         color:#d3d3d3;
