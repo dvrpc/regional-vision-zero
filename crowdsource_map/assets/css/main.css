@@ -157,9 +157,13 @@
     white-space: nowrap;
     padding: 0px 30px 0px 30px;
     }
-    .modal-content{
+    .modal-dialog{
+      max-width:800px;
+      overflow:hidden;
+      }
+    /* .modal-content{
       height: 600px;
-    }
+    } */
     .modal-footer {
     padding: 5px;
     }
@@ -189,9 +193,6 @@
     }
     #about_footer p{
     margin: 10px;
-    }
-    .modal-dialog{
-    width:800px;
     }
     h1 {
     font-size:22px;
@@ -312,8 +313,9 @@
           display: none;
         }
       }
-      @media screen and (max-width: 374px) {
-        .modal-content {
-          width:350px;
+      @media (min-width: 768px) {
+        .modal-dialog {
+          /* width: 600px; */
+          margin: 30px auto;
         }
       }
