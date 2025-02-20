@@ -118,7 +118,7 @@
     .dvrpc_logo {
       display: inline-block;
       width: 172px;
-      height: 80px;
+      height: 70px;
       background-size: cover;
     }   
     .d-logo {
@@ -163,8 +163,12 @@
     .modal-footer {
     padding: 5px;
     }
-    #more_info{
+    #about_info {
+      font-size: 16px;
+    }
+    #more_info {
       margin: 10px 0px 0px 12px;
+      font-size: 16px;
     }
     #more_info_p {
       margin: 0px 12px 0px 25px;
