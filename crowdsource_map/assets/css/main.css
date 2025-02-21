@@ -177,6 +177,16 @@
     #about_info {
       font-size: 15px;
     }
+    .about_link{
+      color: #333;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+    .about_link:hover{
+      color: #d3d3d3;
+      text-decoration: underline;
+      font-size: 14px;
+    }
     #more_info {
       margin: 10px 0px 0px 0px;
       font-size: 14px;
@@ -257,7 +267,7 @@
     }
     div.panel, p.flip {
       line-height: 30px;
-      margin: auto;
+      /* margin: auto; */
       font-size: 16px;
       padding: 5px;
       text-align: center;
