@@ -12,6 +12,8 @@
       <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+ 
       <link rel="stylesheet" href="assets/css/main.css">    
       <!-- Optional theme -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
@@ -33,12 +35,7 @@
   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+
 
                 <div class="navbar-brand banner">
                     <div class="wrapper">
@@ -53,8 +50,7 @@
 
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <div class="nav navbar-nav navbar-right">
-                    <button type="button" class="btn btn-sm"<a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('show'); return false;"><i class="fa fa-info-circle" style="color:#fff"></i>&nbsp;&nbsp;<b>About</b></a>
-                    </button>
+                    <img id="about_icon" src="assets/img/about.svg" alt="about icon" onclick="$('#aboutModal').modal('show'); return false;"/>
                     </div>
                 </div>
 
@@ -114,28 +110,42 @@
                             <h4 class="modal-title">Regional Vision Zero Traffic Safety Concerns</h4>
                         </div>
                         <div class="modal-body">
-                            <div> <img src="assets/img/rvz_logo.png" alt="IDRUm logo" class="rvz-full-logo"/>
+                            <div>
+                              <!-- <img src="assets/img/rvz_logo.png" alt="RZV logo" class="rvz-full-logo"/> -->
                               <p id="about_info">DVRPC and its partners are developing a <B>Regional Vision Zero (RVZ)</B> plan to make roadways safer for all users. We want to hear your traffic safety concerns. Use this mapping tool to report a concern by selecting a location and answering a few questions. You can also vote for an existing comment by clicking the thumbs up emoji. Comments gathered here will help inform the RVZ plan by raising awareness of traffic safety concerns.
                               </p>
                             </div>
                       
                              <div id="more_info">
+                              </br>
                               <ol>
-                                <li> To begin, click the blue “Submit a Traffic Safety Concern” button (bottom left of map).</li>
-                                <li> Click on the map to add a point where your safety concern is located (e.g.: intersection, driveway, etc.).</li>
+                                <li>To begin, click the <b>“Submit a Traffic Safety Concern”</b> button <i>(bottom left of map)</i>.</li>
+                                <li>Click on the map to add a point where your safety concern is located <i>(e.g.: intersection, driveway, etc.)</i>.</li>
+                                <li>Select your traffic safety concern from the following:
+                                  <ul class="list">
+                                    <li class="item"> <img id="list_icon" src="assets/img/bikeconditions.png" alt="list icon"/>Bicycle Conditons</li>
+                                    <li class="item"> <img id="list_icon" src="assets/img/nearmiss.png" alt="list icon"/>Near miss incident</li>
+                                    <li class="item"> <img id="list_icon" src="assets/img/poorvisibility.png" alt="list icon"/>Poor visibility</li>
+                                    <li class="item"> <img id="list_icon" src="assets/img/roadmaintenance.png" alt="list icon"/>Road maintenance (potholes, road markings, drainage, etc.)</li>
+                                    <li class="item"> <img id="list_icon" src="assets/img/sidewalkconditions.png" alt="list icon"/>Sidewalk/ crossing conditions/ ADA facilities</li>
+                                    <li class="item"> <img id="list_icon" src="assets/img/trafficsignage.png" alt="list icon"/>Traffic signage/ signals</li>
+                                    <li class="item"> <img id="list_icon" src="assets/img/transitconditions.png" alt="list icon"/>Transit conditions</li>
+                                    <li class="item"> <img id="list_icon" src="assets/img/userbehavior.png" alt="list icon"/>User behavior (driver/ pedestrain/ cyclist, etc.)</li>
+                                    <li class="item"> <img id="list_icon" src="assets/img/other.png" alt="list icon"/>Other</li>
+                                  </ul>
+
+                                </li>
                                 <li>Answer the questions in the form.</li>
-                                <li>Click the blue <B>“Submit”</B> button to send us your traffic safety concern.</li>
+                                <li>Click the <B>“Submit”</B> button to send us your traffic safety concern.</li>
                               </ol>
-                              <p id="more_info_legend">
+                              <!-- <p id="more_info_legend">
                                 <img id="about_legend" src="assets/img/legend.png" alt="legend icon"/>
                                 Click on the legend icon to view the list of various traffic safety concerns that we are interested in hearing from you about. 
-                              </p>
+                              </p> -->
                             </div>
 
-                            <div id="about_footer"><p style="margin: 5px;">DVRPC serves strictly as an advisory agency. Any planning or design concepts as prepared by DVRPC are conceptual and may require engineering design and feasibility analysis. Actual authority for carrying out any planning proposals rest solely with the governing bodies of the states, local governments or authorities that have the primary responsibility to own, manage or maintain any transportation facility. 
+                            <div id="about_footer"><p style="margin: 5px;">DVRPC serves strictly as an advisory agency. Any planning or design concepts as prepared by DVRPC are conceptual and may require engineering design and feasibility analysis. Actual authority for carrying out any planning proposals rest solely with the governing bodies of the states, local governments or authorities that have the primary responsibility to own, manage or maintain any transportation facility. For more information, visit <a href="https://www.dvrpc.org/Policies/" target="_blank" class="footer_links">https://www.dvrpc.org/Policies/</a>
                             </p>
-
-                            <p style="margin: 5px;">For more information, visit <a href="https://www.dvrpc.org/Policies/" target="_blank" class="footer_links">https://www.dvrpc.org/Policies/</a></p>
                             <button type="button" class="btn btn-sm-map"<a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('hide'); return false;"><i class="fa fa-map" style="color:#fff"></i>&nbsp;&nbsp;<b>Enter Map</b></a>
                             </div>
                            
