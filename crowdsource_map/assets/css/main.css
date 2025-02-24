@@ -1,4 +1,5 @@
 
+    
     html, body,  #container , #map, #sidebar {
     height: 100%;
     margin: 0px;
@@ -147,6 +148,12 @@
         /* height:60px; */
         width:145px;
      }
+     .dvrpc-logo-full {
+      width: 174px;
+      height: 70px;
+      margin: 14px 28px 6px 5px;
+      /* float: left; */
+    }
      .vertical-banner {
       border-left: 1px solid;
       color: #505050;
@@ -156,7 +163,6 @@
     .container-fluid {
     z-index: 30;
     height:70px;
-    /* height: 84px; */
     border-bottom: 3px solid #f7f7f7;
     color: #fff;
     white-space: nowrap;
@@ -190,6 +196,17 @@
     #more_info {
       margin: 10px 0px 0px 0px;
       font-size: 14px;
+      border-width:1px;
+      border-style:solid;
+      border-color: #505050;
+      border-radius: 25px;
+    }
+    #contact_info{
+      display: flex;
+      margin:0px 0px 10px 0px;
+    }
+    #contact{
+      margin:10px 0px 0px 10px;
     }
     .list {
       display: grid;
@@ -336,6 +353,10 @@
       }
       .footer_panel{
         color:#d3d3d3;
+      }
+      :host([kind="brand"]) button, :host([kind="brand"]) a {
+        /* background-color: var(--calcite-color-brand); */
+        background-color: #005475 !important; 
       }
       @media screen and (max-width: 930px) {
         #header-link-text {
