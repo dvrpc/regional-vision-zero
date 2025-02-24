@@ -83,13 +83,22 @@
     }
     .btn.btn-sm {
       margin:25px 10px 0px 4px;
-      float:right;color:#fff;
+      float:right;
+      color:#fff;
       background-color:#005475;
     }
+    #enter_map{
+      display: flex;
+  justify-content: center;
+    }
     .btn.btn-sm-map {
-      margin: 10px 1px 10px 0px;
-      float:right;color:#fff;
+      margin: 10px 10px 10px 0px;
+      /* float:right; */
+      color:#fff;
       background-color:#005475;
+      display: flex;
+      justify-content: center; 
+      text-align: center;
     }
     #about_icon {
       width: 25px;
@@ -181,7 +190,7 @@
     padding: 5px;
     }
     #about_info {
-      font-size: 15px;
+      font-size: 16px;
     }
     .about_link{
       color: #333;
@@ -193,6 +202,9 @@
       text-decoration: underline;
       font-size: 14px;
     }
+    #about_intro{
+      display: flex;
+    }
     #more_info {
       margin: 10px 0px 0px 0px;
       font-size: 14px;
@@ -201,9 +213,12 @@
       border-color: #505050;
       border-radius: 25px;
     }
+    #more_info2 {
+      margin: 10px 0px 0px 10px;
+    }
     #contact_info{
       display: flex;
-      margin:0px 0px 10px 0px;
+      margin:0px 0px 0px 10px;
     }
     #contact{
       margin:10px 0px 0px 10px;
@@ -220,6 +235,9 @@
       width:30px;
       margin:0px 5px 0px 0px;
     }
+    .item {
+      padding: 2px;
+    }
     #more_info_p {
       margin: 0px 12px 0px 25px;
     }
@@ -230,12 +248,14 @@
       align-items: center;
     }
     #about_footer {
+      font-size: 12px;
     font-style: italic;
-    color:#d3d3d3;
-    background-color: #3a3a3a;
-    border-radius: 4px;
-    border: 1px solid transparent;
+    color:#8B8680;
+    /* background-color: #3a3a3a; */
+    /* border-radius: 4px;
+    border: 1px solid transparent; */
     margin: 0px 12px 10px 12px;
+    display: flex;
     }
     #about_footer p{
     margin: 10px;
