@@ -144,7 +144,7 @@
     }
     .rvz-full-logo {
     height: 140px;
-    margin: 0px 9px 0px 5px;
+    margin: 0px 11px 5px 5px;
     float:right;
     }
     #dvrpc-small-logo {
@@ -196,6 +196,14 @@
       color: #333;
       text-decoration: underline;
       font-size: 14px;
+    }
+    .splash_link{
+      color: #333;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+    .splash_link:hover{
+      color: #005475;
     }
     .about_link:hover{
       color: #d3d3d3;
